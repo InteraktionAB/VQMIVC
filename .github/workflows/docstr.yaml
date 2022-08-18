@@ -26,4 +26,4 @@ jobs:
         pip install docstr-coverage==2.2.0
     - name: Run coverage
       run: |
-        docstr-coverage selector
+        docstr-coverage app
