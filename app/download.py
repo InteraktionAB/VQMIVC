@@ -1,2 +1,2 @@
-def download_from_drive():
+def download_assets():
     pass
