@@ -1,5 +1,5 @@
 [tool.vulture]
-exclude = ["file*.py", "dir/"]
+exclude = ["file*.py", "dir/", "convert.py", "train.py", "predict.py", "convert_example.py"]
 ignore_decorators = ["@app.route", "@require_*"]
 ignore_names = ["visit_*", "do_*"]
 make_whitelist = true
