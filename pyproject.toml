@@ -9,3 +9,5 @@ sort_by_size = true
 verbose = true
 [tool.black]
 exclude = ["ParallelWaveGAN/", "*.py", "mel_stats/"]
+[tool.isort]
+exclude = ["ParallelWaveGAN/", "*.py"]
