@@ -10,4 +10,4 @@ verbose = true
 [tool.black]
 exclude = ["ParallelWaveGAN/", "*.py", "mel_stats/"]
 [tool.isort]
-exclude = ["ParallelWaveGAN/", "*.py"]
+src_paths = "app"
