@@ -8,7 +8,6 @@ repos:
   rev: 3.9.2
   hooks:
     - id: flake8
-      exclude: ParallelWaveGAN/*
 - repo: https://github.com/pycqa/isort
   rev: 5.8.0
   hooks:
