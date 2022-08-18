@@ -7,5 +7,3 @@ min_confidence = 80
 paths = ["."]
 sort_by_size = true
 verbose = true
-[tool.flake8]
-exclude = ["ParallelWaveGAN/"]
