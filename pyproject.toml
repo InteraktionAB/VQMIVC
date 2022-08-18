@@ -8,4 +8,4 @@ paths = ["."]
 sort_by_size = true
 verbose = true
 [tool.black]
-exclude: "ParallelWaveGAN"
+exclude = "ParallelWaveGAN"
