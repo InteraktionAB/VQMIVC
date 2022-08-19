@@ -43,7 +43,7 @@ title = "VQMIVC"
 description = "Gradio demo for VQMIVC: Vector Quantization and Mutual Information-Based Unsupervised Speech Representation Disentanglement for One-shot Voice Conversion. To use it, simply add your audio, or click one of the examples to load them. Read more at the links below."
 article = "<p style='text-align: center'><a href='https://arxiv.org/abs/2106.10132' target='_blank'>VQMIVC: Vector Quantization and Mutual Information-Based Unsupervised Speech Representation Disentanglement for One-shot Voice Conversion</a> | <a href='https://github.com/Wendison/VQMIVC' target='_blank'>Github Repo</a></p>"
 
-examples = [["source.wav", "ref.wav"]]
+examples = [["source.wav", None, "ref.wav", None]]
 
 gr.Interface(
     inference,
