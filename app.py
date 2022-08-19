@@ -13,15 +13,15 @@ shutil.move("VQMIVC-pretrained models/checkpoints/", ".")
 shutil.move("VQMIVC-pretrained models/vocoder/", ".")
 
 
-def inference(audio1, audio2, mic_audio_path_1, mic_audio_path_2):
+def inference(audio1, mic_audio_path_1, audio2, mic_audio_path_2):
     try:
-        os.rename(audio1.name, "1.wav")
+        os.rename(audio1, "1.wav")
     except:
-        os.rename(mic_audio_path_1.name, "1.wav")
+        os.rename(mic_audio_path_1, "1.wav")
     try:
-        os.rename(audio2.name, "2.wav")
+        os.rename(audio2, "2.wav")
     except:
-        os.rename(mic_audio_path_2.name, "2.wav")
+        os.rename(mic_audio_path_2, "2.wav")
     os.system("ls")
     os.system(
         "python convert_example.py -s 1.wav -r 2.wav -c converted -m 'checkpoints/useCSMITrue_useCPMITrue_usePSMITrue_useAmpTrue/VQMIVC-model.ckpt-500.pt'"
@@ -31,10 +31,10 @@ def inference(audio1, audio2, mic_audio_path_1, mic_audio_path_2):
 
 
 inputs = [
-    gr.inputs.Audio(label="Source Audio", type="file"),
-    gr.inputs.Audio(label="Reference Audio", type="file"),
-    gr.inputs.Audio(label="Source recording", source="microphone", type="file"),
-    gr.inputs.Audio(label="Reference recording", source="microphone", type="file"),
+    gr.inputs.Audio(label="Source Audio", type="filepath"),
+    gr.inputs.Audio(label="Source recording", source="microphone", type="filepath"),
+    gr.inputs.Audio(label="Reference Audio", type="filepath"),
+    gr.inputs.Audio(label="Reference recording", source="microphone", type="filepath"),
 ]
 outputs = gr.outputs.Audio(label="Output Audio", type="file")
 
