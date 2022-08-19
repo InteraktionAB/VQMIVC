@@ -7,3 +7,4 @@ torch==1.4.0
 numpy==1.19.1
 kaldiio==2.15.1
 gdown==4.5.1
+gradio==3.1.5
