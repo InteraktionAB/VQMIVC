@@ -33,8 +33,8 @@ def inference(audio1, audio2, mic_audio_path_1, mic_audio_path_2):
 inputs = [
     gr.inputs.Audio(label="Source Audio", type="file"),
     gr.inputs.Audio(label="Reference Audio", type="file"),
-    gr.inputs.Audio(label="Source recording", source="mic", type="file"),
-    gr.inputs.Audio(label="Reference recording", source="mic", type="file"),
+    gr.inputs.Audio(label="Source recording", source="microphone", type="file"),
+    gr.inputs.Audio(label="Reference recording", source="microphone", type="file"),
 ]
 outputs = gr.outputs.Audio(label="Output Audio", type="file")
 
