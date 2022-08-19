@@ -54,5 +54,5 @@ gr.Interface(
     article=article,
     examples=examples,
     enable_queue=True,
-    live=True,
+    share=True,
 ).launch()
